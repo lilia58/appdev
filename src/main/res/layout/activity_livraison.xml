@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+   >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Image Header -->
+        <ImageView
+            android:id="@+id/headerImage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/livraison"
+            android:scaleType="centerCrop" />
+
+        <!-- Card for each store -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:layout_marginBottom="8dp"
+
+            android:elevation="4dp">
+
+            <ImageView
+                android:id="@+id/storeLogo"
+                android:layout_width="85dp"
+                android:layout_height="188dp"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/uno" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/storeName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="UNO"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/storeDescription1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Localisation : Cité 2004 Logements,
+ Bab Ezzouar, Alger\n
+Numéro : +213 23 93 37 37 \n
+Description : \n
+Ce supermarché est
+ populaire pour ses produits frais,
+épicerie, fruits et légumes.
+ Uno offre parfois des promotions
+ intéressantes sur divers produits et
+ propose aussi des livraisons."
+                    android:textSize="14sp"
+                    android:textColor="#757575" />
+
+                <!-- Ajout du bouton -->
+                <Button
+                    android:id="@+id/sendButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:text="Envoyer"
+                    android:backgroundTint="#FF6200EE"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginTop="8dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:layout_marginBottom="8dp"
+
+            android:elevation="4dp">
+
+            <ImageView
+                android:id="@+id/storeLogo2"
+                android:layout_width="85dp"
+                android:layout_height="188dp"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/ardis" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/storeName2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ARDIS"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/storeDescription2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" Localisation : Route de Dar El Beida,
+ Mohammadia, Alger
+Numéro  : +213 21 86 36 36
+Description : Grand supermarché
+ offrant une grande variété de
+ produits alimentaires,
+d'électroménagers, et de produits
+ de maison. Ardis propose également
+ des services de livraison dans
+ certaines zones.
+ "
+                    android:textSize="14sp"
+                    android:textColor="#757575" />
+                <!-- Ajout du bouton -->
+                <Button
+                    android:id="@+id/sendButton2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:text="Envoyer"
+                    android:backgroundTint="#FF6200EE"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginTop="8dp"/>
+            </LinearLayout>
+        </LinearLayout>        <!-- Card for each store -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:layout_marginBottom="8dp"
+
+            android:elevation="4dp">
+
+            <ImageView
+                android:id="@+id/storeLogo3"
+                android:layout_width="85dp"
+                android:layout_height="188dp"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/carrefour" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/storeName3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CARREFOUR"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/storeDescription3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Localisation : Centre Commercial et
+de Loisirs de Bab Ezzouar, Alger \n
+Numéro  : +213 21 24 92 92 \n
+Description : \n Carrefour est une
+ chaîne de supermarchés proposant
+ des produits variés : alimentation,
+produits frais, hygiène, électronique."
+                    android:textSize="14sp"
+                    android:textColor="#757575" />
+                <!-- Ajout du bouton -->
+                <Button
+                    android:id="@+id/sendButton3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:text="Envoyer"
+                    android:backgroundTint="#FF6200EE"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginTop="8dp"/>
+
+            </LinearLayout>
+        </LinearLayout>        <!-- Card for each store -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:layout_marginBottom="8dp"
+
+            android:elevation="4dp">
+
+            <ImageView
+                android:id="@+id/storeLogo4"
+                android:layout_width="85dp"
+                android:layout_height="188dp"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/carrfourmarket" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/storeName4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Carrefour Market"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/storeDescription4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Localisation : Rue Didouche Mourad,
+ Alger-Centre \n
+Numéro : +213 21 23 45 67 \n
+Description : \n Carrefour Market est
+une version plus petite des
+ hypermarchés Carrefour,
+ idéale pour les courses rapides et
+la livraison à domicile dans les
+zones proches."
+                    android:textSize="14sp"
+                    android:textColor="#757575" />
+                <!-- Ajout du bouton -->
+                <Button
+                    android:id="@+id/sendButton4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:text="Envoyer"
+                    android:backgroundTint="#9C27B0"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginTop="8dp"/>
+            </LinearLayout>
+        </LinearLayout>        <!-- Card for each store -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:layout_marginBottom="8dp"
+
+            android:elevation="4dp">
+
+            <ImageView
+                android:id="@+id/storeLogo1"
+                android:layout_width="85dp"
+                android:layout_height="188dp"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/barake" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/storeName5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" El Baraka"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/storeDescription5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Localisation : Rue 2 Chemins,
+Dely Brahim, Alger \n
+Numéro : +213 21 32 45 67 \n
+Description : \n Supermarché de
+proximité offrant une gamme
+complète de produits alimentaires
+ et d’articles ménagers.
+Ce supermarché propose des
+ livraisons dans les alentours."
+                    android:textSize="14sp"
+                    android:textColor="#757575" />
+                <!-- Ajout du bouton -->
+                <Button
+                    android:id="@+id/sendButton5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:text="Envoyer"
+                    android:backgroundTint="#FF6200EE"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginTop="8dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <!-- Image d'en-tête -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/legumes" />
+
+        <!-- Titre de la section -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fruits"
+            android:layout_gravity="center"
+            android:textColor="#333333"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Grille pour les fruits -->
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="3"
+            android:useDefaultMargins="true"
+            android:padding="25dp"
+            android:layout_gravity="center"
+            >
+
+            <!-- Exemple d'élément fruit -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+
+                android:padding="8dp">
+
+                <ImageButton
+                    android:id="@+id/btn_aubergine"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/aubergine"
+
+                    android:layout_gravity="center"
+                    android:contentDescription="TODO" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Aubergine"
+                    android:textColor="#F8000000"
+                    android:textSize="14sp"
+                    android:layout_marginTop="4dp"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="#00F43636"
+                android:padding="8dp">
+
+                <ImageButton
+                    android:id="@+id/btn_ongion"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/oignon"
+                    android:layout_gravity="center"
+                    android:contentDescription="TODO" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ongion"
+                    android:textColor="#333333"
+                    android:textSize="14sp"
+                    android:layout_marginTop="4dp"
+                    android:layout_gravity="center" />
+            </LinearLayout>   <!-- Répétez ce modèle pour chaque fruit -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="8dp">
+
+                <ImageButton
+                    android:id="@+id/btn_choux"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/choux"
+                    android:background="?android:attr/selectableItemBackgroundBorderless"
+                    android:layout_gravity="center"
+                    android:contentDescription="TODO" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Choux"
+                    android:textColor="#333333"
+                    android:textSize="14sp"
+                    android:layout_marginTop="4dp"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="8dp">
+
+                <ImageButton
+                    android:id="@+id/btn_haricot"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/haricot"
+                    android:background="?android:attr/selectableItemBackgroundBorderless"
+                    android:layout_gravity="center"
+                    android:contentDescription="TODO" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Péche"
+                    android:textColor="#333333"
+                    android:textSize="14sp"
+                    android:layout_marginTop="4dp"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="8dp">
+
+                <ImageButton
+                    android:id="@+id/btn_poivron"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/poivrons"
+                    android:background="?android:attr/selectableItemBackgroundBorderless"
+                    android:layout_gravity="center"
+                    android:contentDescription="TODO" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Poivrons"
+                    android:textColor="#333333"
+                    android:textSize="14sp"
+                    android:layout_marginTop="4dp"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="8dp">
+
+                <ImageButton
+                    android:id="@+id/btn_courgette"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/courgette"
+                    android:background="?android:attr/selectableItemBackgroundBorderless"
+                    android:layout_gravity="center"
+                    android:contentDescription="TODO" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Courgette"
+                    android:textColor="#333333"
+                    android:textSize="14sp"
+                    android:layout_marginTop="4dp"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="8dp">
+
+                <ImageButton
+                    android:id="@+id/btn_navet"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/navet"
+                    android:layout_gravity="center"
+                    android:contentDescription="TODO" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Navet"
+                    android:textColor="#333333"
+                    android:textSize="14sp"
+                    android:layout_marginTop="4dp"
+                    android:layout_gravity="center" />
+            </LinearLayout>   <!-- Répétez ce modèle pour chaque fruit -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="8dp">
+
+                <ImageButton
+                    android:id="@+id/btn_potato"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/potato"
+                    android:layout_gravity="center"
+                    android:contentDescription="TODO" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pomme de terre"
+                    android:textColor="#333333"
+                    android:textSize="14sp"
+                    android:layout_marginTop="4dp"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="8dp">
+
+                <ImageButton
+                    android:id="@+id/btn_carrote"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/carrotes"
+                    android:background="?android:attr/selectableItemBackgroundBorderless"
+                    android:layout_gravity="center"
+                    android:contentDescription="TODO" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Carrotte"
+                    android:textColor="#333333"
+                    android:textSize="14sp"
+                    android:layout_marginTop="4dp"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="8dp">
+
+                <ImageButton
+                    android:id="@+id/btn_ail"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/aile"
+                    android:layout_gravity="center"
+                    android:contentDescription="TODO" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Aile"
+                    android:textColor="#333333"
+                    android:textSize="14sp"
+                    android:layout_marginTop="4dp"
+                    android:layout_gravity="center" />
+            </LinearLayout>   <!-- Répétez ce modèle pour chaque fruit -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="8dp">
+
+                <ImageButton
+                    android:id="@+id/btn_tomate"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/tomates"
+                    android:background="?android:attr/selectableItemBackgroundBorderless"
+                    android:layout_gravity="center"
+                    android:contentDescription="TODO" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tomate"
+                    android:textColor="#333333"
+                    android:textSize="14sp"
+                    android:layout_marginTop="4dp"
+                    android:layout_gravity="center" />
+            </LinearLayout>   <!-- Répétez ce modèle pour chaque fruit -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="8dp">
+
+                <ImageButton
+                    android:id="@+id/btn_salade"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/lettue"
+                    android:background="?android:attr/selectableItemBackgroundBorderless"
+                    android:layout_gravity="center"
+                    android:contentDescription="TODO" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Salade"
+                    android:textColor="#333333"
+                    android:textSize="14sp"
+                    android:layout_marginTop="4dp"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+
+                android:padding="8dp">
+
+                <ImageButton
+                    android:id="@+id/btn_concombre"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/concombre"
+                    android:background="?android:attr/selectableItemBackgroundBorderless"
+                    android:layout_gravity="center"
+                    android:contentDescription="TODO" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Concombre"
+                    android:textColor="#333333"
+                    android:textSize="14sp"
+                    android:layout_marginTop="4dp"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+
+
+
+        </GridLayout>
+    </LinearLayout>
+</ScrollView>
